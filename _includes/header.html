@@ -121,6 +121,11 @@
           {{ site.website_title | default: "Web" }}: {% include a.html href=site.website %}{{ site.website | escape }}</a>
         </p>
       {%- endif -%}
+        {%- if site.pdf -%}
+	<p>
+          {{ site.pdf_title }} <a href="/pdf/cv.pdf" target="_blank" class="pdf">{{ site.pdf | escape }}</a>
+        </p>
+      {%- endif -%}
     </div>
   </div>
 </div>
